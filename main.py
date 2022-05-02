@@ -1,6 +1,3 @@
-import time
-
-import dateutil.utils
 from bs4 import BeautifulSoup
 import requests
 import dateparser
@@ -27,6 +24,7 @@ def find_jobs():
                 f.write('\nDate posted:\t' + posted_date)
                 f.write('\nApply here: \t' + job_link)
                 f.write('\n\n')
+
 
 if __name__ == '__main__':
     find_jobs()
